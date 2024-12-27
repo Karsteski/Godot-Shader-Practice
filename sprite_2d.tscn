@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvnwuiqw3efvu"]
+
+[ext_resource type="Shader" path="res://shader.gdshader" id="1_mobe4"]
+[ext_resource type="Texture2D" uid="uid://ctliqxetg715w" path="res://icon.svg" id="2_c67gy"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="3_p6778"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pt22j"]
+shader = ExtResource("1_mobe4")
+shader_parameter/set_colour_manually = false
+shader_parameter/animate = true
+shader_parameter/red_colour = 0.5
+shader_parameter/green_colour = 0.5
+shader_parameter/blue_colour = 0.5
+shader_parameter/smoothstep_thresholds = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D"]
+material = SubResource("ShaderMaterial_pt22j")
+position = Vector2(591, 314)
+scale = Vector2(5.40625, 3.96876)
+texture = ExtResource("2_c67gy")
+script = ExtResource("3_p6778")
